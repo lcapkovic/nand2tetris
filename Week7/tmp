@@ -1,0 +1,17 @@
+0 C_PUSH constant 10
+1 C_POP local 0
+2 C_PUSH constant 21
+3 C_PUSH constant 22
+4 C_POP argument 2
+5 C_POP argument 1
+6 C_PUSH constant 36
+7 C_POP this 6
+8 C_PUSH constant 42
+9 C_PUSH constant 45
+10 C_POP that 5
+11 C_POP that 2
+12 C_PUSH constant 510
+13 C_POP temp 6
+14 C_PUSH local 0
+15 C_PUSH that 5
+16 C_ARITHMETIC
