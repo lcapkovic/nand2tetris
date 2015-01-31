@@ -87,4 +87,4 @@ def arg2():
     if commandType() == "C_ARITHMETIC":
         return lines[current]
     else:
-        return lines[current].split(" ")[2]
+        return int(lines[current].split(" ")[2])

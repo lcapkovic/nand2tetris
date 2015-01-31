@@ -4,8 +4,6 @@ import CodeWriter
 Parser.init("Prog.vm")
 CodeWriter.init("Prog.asm")
 
-CodeWriter.WritePushPop("push","constant","1")
-
 while Parser.hasMoreCommands():
     Parser.advance()
 
