@@ -30,7 +30,16 @@ def writeArithmetic(command):
 def WritePushPop(command, segment, index):
     """Writes the assembly code that is the translation of the given command,
     where command is either C_PUSH or C_POP."""
-    # implement me
+    if command == "push":
+        if segment == "constant":
+            f.write("@" + str(index) + "\n")
+            f.write("D=A\n")
+            f.write("@0\n")
+            f.write("A=M\n")
+            f.write("M=D\n")
+            f.write("@0\n")
+            f.write("M=M+1")
+
 
 def close():
     """Closes the output file."""
